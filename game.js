@@ -30,5 +30,7 @@ window.onload = (event) => {
 		}
 	}
 
-	worker.postMessage(["start", 0])
+	worker.postMessage({
+		name:"start"
+	})
 }
