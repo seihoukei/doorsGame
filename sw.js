@@ -3,10 +3,12 @@ self.addEventListener('install', event => {
 		caches.open("doorsIdle").then(cache => {
 			return cache.addAll([
 				'index.html',
+				
 				'game.js',
 				'gameGui.js',
 				'gameEngine.js',
-				'gameWorker.css',
+				'gameWorker.js',
+				
 				'game.css',
 			])
 		})
