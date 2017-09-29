@@ -6,7 +6,8 @@ self.addEventListener('install', event => {
 				'game.js',
 				'gameGui.js',
 				'gameEngine.js',
-				'game.css'
+				'gameWorker.css',
+				'game.css',
 			])
 		})
 	)
