@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
 				'game.js',
 				'gameGui.js',
 				'gameEngine.js',
-				'game.css',
+				'game.css'
 			])
 		})
 	)
@@ -16,7 +16,7 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
 	event.respondWith(
 		caches.match(event.request).then(response => {
-			return response || fetch(event.request);
+			return fetch(event.request) || response;
 		})
 	)
 })
